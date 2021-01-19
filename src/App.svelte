@@ -33,7 +33,7 @@
 <div class="container">
   <div class="inner-block">
     <img
-      src="me.jpg"
+      src="https://teenance.sirv.com/portfolio/me.jpg"
       alt="It's a me"
       class="avatar"
       width="200px"
