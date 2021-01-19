@@ -3,17 +3,13 @@
   export let url: string;
   export let bgColor: string;
   export let textColor: string;
-
-  const isEmail = Boolean(text.startsWith("mailto"));
-
-  const cssVars = `--bg-color: ${bgColor}; --text-color: ${textColor}`;
 </script>
 
 <a
   class="social-link"
-  style={cssVars}
+  style="--bg-color: {bgColor}; --text-color: {textColor}"
   href={url}
-  rel={isEmail ? "noopener norefferer" : ""}
+  rel="noopener norefferer"
   target="_blank">
   {text}
 </a>

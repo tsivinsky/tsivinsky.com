@@ -21,13 +21,9 @@
       bgColor: "#1DA1F2",
       textColor: "#ffffff",
     },
-    {
-      text: "Email",
-      url: "mailto:daniil@tsivinsky.com",
-      bgColor: "#cccccc",
-      textColor: "#ffffff",
-    },
   ];
+
+  const email = "daniil@tsivinsky.com";
 </script>
 
 <div class="container">
@@ -43,6 +39,9 @@
     <div class="bio">
       <p>I'm Junior Fullstack Developer based in Russia 🇷🇺.</p>
       <p>I love coding and playing video games.</p>
+    </div>
+    <div class="email">
+      Email: <a href="mailto:{email}">{email}</a>
     </div>
     <div class="social-links">
       <h2>Social Media</h2>
@@ -68,6 +67,7 @@
     .inner-block {
       display: flex;
       flex-direction: column;
+      align-items: center;
       padding-top: 20px;
       .avatar {
         display: flex;
@@ -83,6 +83,14 @@
       }
       .bio {
         text-align: center;
+      }
+      .email {
+        a {
+          text-decoration: none;
+          color: #000000;
+          border-bottom: 2px solid;
+          font-size: 13pt;
+        }
       }
       .social-links {
         width: 60%;
