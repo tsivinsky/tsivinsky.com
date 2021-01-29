@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Project from "./components/Project.svelte";
   import SocialLink from "./components/SocialLink.svelte";
 
   interface ISocialLink {
@@ -6,6 +7,13 @@
     url: string;
     bgColor: string;
     textColor: string;
+  }
+
+  interface IProject {
+    name: string;
+    description: string;
+    homepage?: string;
+    github: string;
   }
 
   const socialLinks: Array<ISocialLink> = [
@@ -20,6 +28,28 @@
       url: "https://twitter.com/daniilcodes",
       bgColor: "#1DA1F2",
       textColor: "#ffffff",
+    },
+  ];
+
+  // TODO: Add projects here
+  const projects: Array<IProject> = [
+    {
+      name: "Tic Tac Toe",
+      description: "Simple Tic Tac Toe game written in vanilla JavaScript",
+      homepage: "https://tic-tac-toe.tsivinsky.com",
+      github: "https://github.com/tsivinsky/tic-tac-toe",
+    },
+    {
+      name: "Svelte To-Do",
+      description: "My first Svelte app",
+      homepage: "https://svelte-todo.tsivinsky.com/",
+      github: "https://github.com/tsivinsky/svelte-todo",
+    },
+    {
+      name: "GitHub Profile",
+      description: "GitHub Profile built with Svelte",
+      homepage: "https://github-profile.tsivinsky.com/",
+      github: "https://github.com/tsivinsky/github-profile",
     },
   ];
 
@@ -43,7 +73,7 @@
     <div class="email">
       Email: <a href="mailto:{email}">{email}</a>
     </div>
-    <div class="social-links">
+    <section class="social-links">
       <h2>Social Media</h2>
       <div class="items">
         {#each socialLinks as link (link.url)}
@@ -55,7 +85,15 @@
           />
         {/each}
       </div>
-    </div>
+    </section>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="items">
+        {#each projects as project}
+          <Project {...project} />
+        {/each}
+      </div>
+    </section>
   </div>
 </div>
 
@@ -92,7 +130,7 @@
           font-size: 13pt;
         }
       }
-      .social-links {
+      section {
         width: 60%;
         margin: 0 auto;
         h2 {
