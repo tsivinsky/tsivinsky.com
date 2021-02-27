@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Daniil Tsivinsky" />
+    <meta name="description" content="Hey, this is my portfolio website" />
+    <meta
+      name="keywords"
+      content="portfolio,daniil tsivinsky,tsivinsky,swe,software engineer,software,fullstack,fullstack developer,developer,development,personal website,programming,programmer,email,github,twitter,project,work,даниил цивинский,цивинский,программист,программирование"
+    />
+
+    <!-- Open Graph tags -->
+    <meta name="og:title" content="Daniil Tsivinsky" />
+    <meta name="og:description" content="Hey, this is my portfolio website" />
+    <meta
+      name="og:image"
+      content="https://teenance.sirv.com/portfolio/me.jpg"
+    />
+    <meta name="og:image:type" content="image/jpg" />
+    <meta name="og:image:width" content="200px" />
+    <meta name="og:image:height" content="200px" />
+
+    <title>Daniil Tsivinsky</title>
+
+    <link rel="stylesheet" href="./build/style.css" />
+    <link rel="canonical" href="https://tsivinsky.com" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <script src="./build/bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="greeting">Hey 👋</h1>
+      <h2 id="name">I`m Daniil Tsivinsky</h2>
+
+      <div id="bio">
+        <p>
+          I`m a Junior Fullstack Developer based in Saint Petersburg, Russia 🇷🇺
+          and I kinda in love with code and video games.
+        </p>
+        <p>
+          This website is my tiny piece of the Internet, where I show my work.
+        </p>
+        <p>
+          Feel free to mail me at
+          <a class="primary" href="mailto:daniil@tsivinsky.com"
+            >daniil@tsivinsky.com</a
+          >
+        </p>
+      </div>
+
+      <div id="skills">
+        <h3 class="title">My Skills</h3>
+        <ul id="frontend-skills">
+          <h4>Frontend</h4>
+
+          <li>HTML5, CSS3</li>
+          <li>SCSS</li>
+          <li>JavaScript ES6</li>
+          <li>TypeScript <span class="comment">// still learning</span></li>
+          <li>React</li>
+          <li>Redux <span class="comment">// trying to figure it out</span></li>
+          <li>Svelte <span class="comment">// on beginner level</span></li>
+        </ul>
+        <ul id="backend-skills">
+          <h4>Backend</h4>
+
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB (w/ mongoose)</li>
+          <li>Go (Golang) <span class="comment">// Same as Svelte</span></li>
+        </ul>
+        <ul id="other-skills">
+          <h4>Other</h4>
+
+          <li>Git</li>
+        </ul>
+      </div>
+
+      <div id="projects">
+        <h3 class="title">My Work</h3>
+        <div class="project">
+          <a class="github-link" href="https://github.com/tsivinsky/tic-tac-toe"
+            ><h4 class="project-name">Tic Tac Toe</h4></a
+          >
+          <p class="project-description">
+            Simple Tic Tac Toe game written in vanilla JavaScript that I built
+            when I was bored.
+          </p>
+          <a href="https://tic-tac-toe.tsivinsky.com" class="primary"
+            >Check it out</a
+          >
+        </div>
+        <div class="project">
+          <h4 class="project-name">Svelte To-Do App</h4>
+          <p class="project-description">
+            This is my first experience with Svelte and liked it. Now, it`s my
+            #2 right after React.
+          </p>
+          <a href="https://svelte-todo.tsivinsky.com" class="primary"
+            >Check it out</a
+          >
+        </div>
+      </div>
+
+      <div id="social-media">
+        <h3 class="title">My Social Media</h3>
+        <ul>
+          <li><a href="https://github.com/tsivinsky">GitHub</a></li>
+          <li><a href="https://twitter.com/daniilcodes">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

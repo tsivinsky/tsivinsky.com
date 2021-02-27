@@ -1,0 +1,84 @@
+$primary: #0291ff;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #e3e9f0;
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 60%;
+  }
+}
+
+.container {
+  padding-top: 50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 2em;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.comment {
+  color: #aaa;
+}
+
+a {
+  color: #000000;
+  line-height: 2em;
+
+  &:is(.github-link) {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.primary {
+  color: $primary;
+}
+
+ul {
+  li {
+    margin-left: 20px;
+  }
+}
+
+#bio {
+  line-height: 1.5em;
+  font-size: 13pt;
+}
+
+#projects {
+  .project {
+    border-right: 2px solid;
+    padding-right: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
