@@ -6,9 +6,7 @@ console.log("Hey 👋");
 window.addEventListener("load", () => {
   const lang = navigator.language;
 
-  if (lang === "ru-RU") {
-    window.location.href = "/ru";
-  } else {
-    window.location.href = "/";
+  if (lang === "ru-RU" && !location.pathname.includes("/ru")) {
+    location.href = "/ru";
   }
 });
