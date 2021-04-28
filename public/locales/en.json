@@ -1,0 +1,49 @@
+{
+  "head": {
+    "title": "Daniil Tsivinsky - Web Developer",
+    "keywords": [
+      "portfolio",
+      "daniil tsivinsky",
+      "tsivinsky",
+      "swe",
+      "software engineer",
+      "software",
+      "fullstack",
+      "fullstack developer",
+      "developer",
+      "development",
+      "personal website",
+      "programming",
+      "programmer",
+      "email",
+      "github",
+      "twitter",
+      "project",
+      "work"
+    ],
+    "og": {
+      "title": "Daniil Tsivinsky",
+      "description": "Hey, this is my portfolio website"
+    }
+  },
+  "greeting": "Hey 👋",
+  "name": "I`m Daniil Tsivinsky",
+  "bio": {
+    "p1": "I`m a Junior Fullstack Developer based in Saint Petersburg, Russia 🇷🇺 and I kinda in love with code and video games.",
+    "p2": "This website is my tiny piece of the Internet, where I show my work.",
+    "p3": "Now, I`m preparing for my exams because this is my last year at college. So, I`m creating something cool. You can look at the project on ",
+    "p4": "Feel free to mail me at "
+  },
+  "skills": {
+    "title": "My Skills",
+    "frontendSkillsTitle": "Frontend",
+    "backendSkillsTitle": "Backend",
+    "otherSkillsTitle": "Other"
+  },
+  "projects": {
+    "title": "My Work"
+  },
+  "socialMedia": {
+    "title": "My Social Media"
+  }
+}
