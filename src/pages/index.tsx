@@ -110,11 +110,14 @@ export default function Index({ router, text }: Props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const response = await axios.get(`/locales/${ctx.locale}.json`);
+  const response = await axios.get("/api/locales", {
+    params: { locale: ctx.locale },
+  });
+  const { text } = response.data;
 
   return {
     props: {
-      text: response.data,
+      text,
     },
   };
 };
