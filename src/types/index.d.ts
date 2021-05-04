@@ -2,7 +2,9 @@ import { Router } from "next/router";
 
 export interface IProject {
   name: string;
-  description: string;
+  description: {
+    [locale: string]: string;
+  };
   githubURL: string;
   homepage: string;
 }

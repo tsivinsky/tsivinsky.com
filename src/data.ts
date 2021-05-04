@@ -3,8 +3,11 @@ import { IProject, ISkills, ISocialLink } from "./types";
 export const projects: Array<IProject> = [
   {
     name: "Tic Tac Toe",
-    description:
-      "Simple Tic Tac Toe game written in vanilla JavaScript that I built when I was bored.",
+    description: {
+      en:
+        "Simple Tic Tac Toe game written in vanilla JavaScript that I built when I was bored.",
+      ru: "Простая игра Крести-Нолики на чистом JavaScript",
+    },
     githubURL: "https://github.com/tsivinsky/tic-tac-toe",
     homepage: "https://tic-tac-toe.tsivinsky.com",
   },
